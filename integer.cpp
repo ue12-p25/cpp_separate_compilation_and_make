@@ -7,8 +7,12 @@
 
 // cette méthode ne doit PAS être qualifiée inline dans ce .cpp
 // les .cpp ne sont PAS inclus
-// donc pas de possibilité d'indiquer le corps de la fonction aux fichiers l'appelant... 
-int Integer::get()
+// donc pas de possibilité d'indiquer le corps de la fonction aux fichiers l'appelant...
+
+// remarquez le & pour que cette fonction permette de modifier value
+// c'est uniquement pour les cours !!! ce n'est pas bien de faire cela comme cela......
+// voir l'exemple dans le fichier main.cpp
+int& Integer::get()
 {
     return value;
 }

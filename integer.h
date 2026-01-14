@@ -16,7 +16,7 @@ private: // private est le défaut des class (public celui des struct)
     int value = 0;
 
 public:
-    int get(); // déclaration sans définition
+    int& get(); // déclaration sans définition
                // la définition est dans le .cpp
 
     void incr(); // déclaration sans définition
